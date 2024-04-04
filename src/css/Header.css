@@ -1,0 +1,21 @@
+/* Header.css */
+.header {
+  color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  border-radius: 70%;
+  margin-right: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px; /* Adjust as needed */
+  flex: 1; /* Allow the text to expand and occupy remaining space */
+  text-align: center; /* Center align the text */
+}
