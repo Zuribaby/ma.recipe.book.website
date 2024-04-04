@@ -1,6 +1,7 @@
 // RecipesList.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 function RecipesList() {
   const [recipes] = useState([
@@ -24,6 +25,7 @@ function RecipesList() {
 
   return (
     <div>
+      <Header/>
       <h1>Recipes List</h1>
       {recipes.map((recipe) => (
         <div key={recipe.id}>

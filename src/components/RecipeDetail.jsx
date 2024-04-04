@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Header from "./Header";
 
 function RecipeDetail() {
   const { id } = useParams();
@@ -65,23 +66,26 @@ function RecipeDetail() {
 
   return (
     <div>
-      <Link to="/">Back to Recipes List</Link>
-      <h1>{recipe.title}</h1>
-      <img src={recipe.imageUrl} alt={recipe.title} />
-      <h2>Description:</h2>
-      <p>{recipe.description}</p>
-      <h2>Ingredients:</h2>
-      <ul>
-        {recipe.ingredients.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
-        ))}
-      </ul>
-      <h2>Preparation Steps:</h2>
-      <ol>
-        {recipe.steps.map((step, index) => (
-          <li key={index}>{step}</li>
-        ))}
-      </ol>
+      <Header/>
+      <div>
+        <Link to="/">Back to Recipes List</Link>
+        <h1>{recipe.title}</h1>
+        <img src={recipe.imageUrl} alt={recipe.title} />
+        <h2>Description:</h2>
+        <p>{recipe.description}</p>
+        <h2>Ingredients:</h2>
+        <ul>
+          {recipe.ingredients.map((ingredient, index) => (
+            <li key={index}>{ingredient}</li>
+          ))}
+        </ul>
+        <h2>Preparation Steps:</h2>
+        <ol>
+          {recipe.steps.map((step, index) => (
+            <li key={index}>{step}</li>
+          ))}
+        </ol>
+      </div>
     </div>
   );
 }
