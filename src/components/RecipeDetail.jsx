@@ -31,7 +31,8 @@ function RecipeDetail() {
         "Drop spoonfuls of dough onto a baking sheet.",
         "Bake for 10-12 minutes until golden brown.",
       ],
-      imageUrl: "https://example.com/chocolate_chip_cookies.jpg",
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyKOAtmuhofDJuI5NzsOAwVE7_ZuQWKBoqTH24GGhvfg&s",
     },
     {
       id: 3,
@@ -51,7 +52,7 @@ function RecipeDetail() {
         "Combine all ingredients in a bowl.",
         "Serve with your favorite dressing.",
       ],
-      imageUrl: "https://example.com/grilled_chicken_salad.jpg",
+      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
     },
   ]);
 
