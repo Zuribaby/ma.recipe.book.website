@@ -4,60 +4,61 @@ import Header from "./Header";
 import HeroVideo from "./HeroVideo";
 import "../css/RecipeList.css";
 import About from "./About";
+import Footer from "./Footer";
 
 function RecipesList() {
   const [recipes] = useState([
     {
       id: 1,
-      title: "Pasta Carbonara",
-      description: "A classic Italian pasta dish with eggs, cheese, and bacon.",
+      title: "Decadent Cocoa Delights",
+      description: "Homemade cookies filled with chocolate chunks.",
     },
     {
       id: 2,
-      title: "Chocolate Chip Cookies",
-      description: "Homemade cookies filled with chocolate chips.",
+      title: "Classic Wedding Cake",
+      description: "A timeless recipe for a classic tiered wedding cake.",
     },
     {
       id: 3,
-      title: "Chocolate Chip ",
+      title: "Milky Donuts ",
       description:
-        "Homemade cookies filled with chocolate chips with ice cream.",
+        "Soft and fluffy homemade donuts filled with creamy milk custard.",
     },
     {
       id: 4,
-      title: "Chocolate Chip ",
+      title: "Sardine Bread ",
       description:
-        "Homemade cookies filled with chocolate chips with ice cream.",
+        "A savory bread recipe featuring flavorful sardines.",
     },
     {
       id: 5,
-      title: "Chocolate Chip ",
+      title: "Meatpie ",
       description:
-        "Homemade cookies filled with chocolate chips with ice cream.",
+        "A classic savory pastry filled with seasoned meat and vegetables.",
     },
     {
       id: 6,
-      title: "Chocolate Chip ",
+      title: "Croissant ",
       description:
-        "Homemade cookies filled with chocolate chips with ice cream.",
+        "A classic pastry filled with layers of buttery goodness.",
     },
     {
       id: 7,
-      title: "Chocolate Chip ",
+      title: "Blueberry Muffins ",
       description:
-        "Homemade cookies filled with chocolate chips with ice cream.",
+        "Delicious muffins bursting with juicy blueberries.",
     },
     {
       id: 8,
-      title: "Chocolate Chip ",
+      title: "Vanilla Cupcakes ",
       description:
-        "Homemade cookies filled with chocolate chips with ice cream.",
+        "Classic cupcakes with a tender crumb and sweet vanilla flavor.",
     },
     {
       id: 9,
-      title: "Chocolate Chip ",
+      title: "Sausage Rolls ",
       description:
-        "Homemade cookies filled with chocolate chips with ice cream.",
+        "Flaky puff pastry filled with seasoned sausage meat.",
     },
   ]);
   return (
@@ -66,7 +67,7 @@ function RecipesList() {
       <HeroVideo />
       <About />
       <div id="recipeslist" className="recipes-list-container">
-        <h1 className="recipes-list-heading">Recipes List</h1>
+        <h1 className="recipes-list-heading">Junks</h1>
         <div className="recipe-grid">
           {recipes.map((recipe) => (
             <div key={recipe.id} className="recipe-item">
@@ -80,6 +81,7 @@ function RecipesList() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
