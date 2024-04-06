@@ -1,7 +1,9 @@
-// RecipesList.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
+import HeroVideo from "./HeroVideo";
+import "../css/RecipeList.css";
+import About from "./About";
 
 function RecipesList() {
   const [recipes] = useState([
@@ -21,20 +23,63 @@ function RecipesList() {
       description:
         "Homemade cookies filled with chocolate chips with ice cream.",
     },
+    {
+      id: 4,
+      title: "Chocolate Chip ",
+      description:
+        "Homemade cookies filled with chocolate chips with ice cream.",
+    },
+    {
+      id: 5,
+      title: "Chocolate Chip ",
+      description:
+        "Homemade cookies filled with chocolate chips with ice cream.",
+    },
+    {
+      id: 6,
+      title: "Chocolate Chip ",
+      description:
+        "Homemade cookies filled with chocolate chips with ice cream.",
+    },
+    {
+      id: 7,
+      title: "Chocolate Chip ",
+      description:
+        "Homemade cookies filled with chocolate chips with ice cream.",
+    },
+    {
+      id: 8,
+      title: "Chocolate Chip ",
+      description:
+        "Homemade cookies filled with chocolate chips with ice cream.",
+    },
+    {
+      id: 9,
+      title: "Chocolate Chip ",
+      description:
+        "Homemade cookies filled with chocolate chips with ice cream.",
+    },
   ]);
-
   return (
     <div>
-      <Header/>
-      <h1>Recipes List</h1>
-      {recipes.map((recipe) => (
-        <div key={recipe.id}>
-          <h2>
-            <Link to={`/recipe/${recipe.id}`}>{recipe.title}</Link>
-          </h2>
-          <p>{recipe.description}</p>
+      <Header />
+      <HeroVideo />
+      <About />
+      <div id="recipeslist" className="recipes-list-container">
+        <h1 className="recipes-list-heading">Recipes List</h1>
+        <div className="recipe-grid">
+          {recipes.map((recipe) => (
+            <div key={recipe.id} className="recipe-item">
+              <h2 className="recipe-title">
+                <Link to={`/recipe/${recipe.id}`} className="recipe-link">
+                  {recipe.title}
+                </Link>
+              </h2>
+              <p className="recipe-description">{recipe.description}</p>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }

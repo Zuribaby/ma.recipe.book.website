@@ -1,0 +1,12 @@
+.hero-video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  margin-top: 20px;
+}
+
+.hero-video {
+  max-width: 90%;
+  height: 90%;
+  border: 7px solid #000;
+}

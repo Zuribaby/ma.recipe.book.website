@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Header from "./Header";
+import "../css/RecipeDetail.css";
 
 function RecipeDetail() {
   const { id } = useParams();
@@ -55,6 +56,126 @@ function RecipeDetail() {
       ],
       imageUrl: "https://static.toiimg.com/photo/61831141.cms",
     },
+    {
+      id: 4,
+      title: "Mango",
+      description: "A healthy and delicious salad with grilled chicken.",
+      ingredients: [
+        "Chicken Breast",
+        "Lettuce",
+        "Tomatoes",
+        "Cucumbers",
+        "Avocado",
+      ],
+      steps: [
+        "Grill chicken breast until fully cooked.",
+        "Chop lettuce, tomatoes, cucumbers, and avocado.",
+        "Slice grilled chicken breast.",
+        "Combine all ingredients in a bowl.",
+        "Serve with your favorite dressing.",
+      ],
+      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
+    },
+    {
+      id: 5,
+      title: "Grilled Chicken Salad",
+      description: "A healthy and delicious salad with grilled chicken.",
+      ingredients: [
+        "Chicken Breast",
+        "Lettuce",
+        "Tomatoes",
+        "Cucumbers",
+        "Avocado",
+      ],
+      steps: [
+        "Grill chicken breast until fully cooked.",
+        "Chop lettuce, tomatoes, cucumbers, and avocado.",
+        "Slice grilled chicken breast.",
+        "Combine all ingredients in a bowl.",
+        "Serve with your favorite dressing.",
+      ],
+      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
+    },
+    {
+      id: 6,
+      title: "Grilled Chicken Salad",
+      description: "A healthy and delicious salad with grilled chicken.",
+      ingredients: [
+        "Chicken Breast",
+        "Lettuce",
+        "Tomatoes",
+        "Cucumbers",
+        "Avocado",
+      ],
+      steps: [
+        "Grill chicken breast until fully cooked.",
+        "Chop lettuce, tomatoes, cucumbers, and avocado.",
+        "Slice grilled chicken breast.",
+        "Combine all ingredients in a bowl.",
+        "Serve with your favorite dressing.",
+      ],
+      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
+    },
+    {
+      id: 7,
+      title: "Grilled Chicken Salad",
+      description: "A healthy and delicious salad with grilled chicken.",
+      ingredients: [
+        "Chicken Breast",
+        "Lettuce",
+        "Tomatoes",
+        "Cucumbers",
+        "Avocado",
+      ],
+      steps: [
+        "Grill chicken breast until fully cooked.",
+        "Chop lettuce, tomatoes, cucumbers, and avocado.",
+        "Slice grilled chicken breast.",
+        "Combine all ingredients in a bowl.",
+        "Serve with your favorite dressing.",
+      ],
+      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
+    },
+    {
+      id: 8,
+      title: "Grilled Chicken Salad",
+      description: "A healthy and delicious salad with grilled chicken.",
+      ingredients: [
+        "Chicken Breast",
+        "Lettuce",
+        "Tomatoes",
+        "Cucumbers",
+        "Avocado",
+      ],
+      steps: [
+        "Grill chicken breast until fully cooked.",
+        "Chop lettuce, tomatoes, cucumbers, and avocado.",
+        "Slice grilled chicken breast.",
+        "Combine all ingredients in a bowl.",
+        "Serve with your favorite dressing.",
+      ],
+      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
+    },
+    {
+      id: 9,
+      title: "Grilled Chicken Salad",
+      description: "A healthy and delicious salad with grilled chicken.",
+      ingredients: [
+        "Chicken Breast",
+        "Lettuce",
+        "Tomatoes",
+        "Cucumbers",
+        "Avocado",
+      ],
+      steps: [
+        "Grill chicken breast until fully cooked.",
+        "Chop lettuce, tomatoes, cucumbers, and avocado.",
+        "Slice grilled chicken breast.",
+        "Combine all ingredients in a bowl.",
+        "Serve with your favorite dressing.",
+      ],
+      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
+    },
   ]);
 
   // Find the recipe with the matching ID
@@ -66,11 +187,21 @@ function RecipeDetail() {
 
   return (
     <div>
-      <Header/>
-      <div>
-        <Link to="/">Back to Recipes List</Link>
+      <Header />
+      <div className="button-container">
+        <Link to="/">
+          <button className="button">Back</button>
+        </Link>
+      </div>
+      <div className="recipes-details-container">
         <h1>{recipe.title}</h1>
-        <img src={recipe.imageUrl} alt={recipe.title} />
+        <div className="recipe-image-container">
+          <img
+            src={recipe.imageUrl}
+            alt={recipe.title}
+            className="recipe-image"
+          />
+        </div>
         <h2>Description:</h2>
         <p>{recipe.description}</p>
         <h2>Ingredients:</h2>

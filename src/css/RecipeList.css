@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
+
+body {
+  font-family: "Chivo", sans-serif;
+}
+
+/* Center the entire content */
+.recipes-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Add a new class for the recipe grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Styles for the header */
+.recipes-list-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styles for each recipe item */
+.recipe-item {
+  margin-bottom: 20px;
+  border: 2px solid black;
+  padding: 50px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* Styles for recipe titles */
+.recipe-title {
+  font-size: 20px;
+}
+
+/* Styles for recipe descriptions */
+.recipe-description {
+  margin-top: 10px;
+}

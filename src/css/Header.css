@@ -1,21 +1,55 @@
-/* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+
+/* Styling for the header container */
 .header {
-  color: black;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px; /* Set padding for top and bottom */
+  margin-left: 150px;
+  margin-right: 200px;
+  font-family: "Chivo", sans-serif;
+}
+
+/* Styling for the logo container */
+.logo-container {
   display: flex;
   align-items: center;
 }
 
+/* Styling for the logo */
 .logo {
-  width: 100px;
-  height: auto;
-  border-radius: 70%;
-  margin-right: 20px;
+  width: 90px;
 }
 
-.header h1 {
+/* Styling for the logo name */
+.logo-name {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+/* Styling for the navigation list */
+.nav-list {
+  list-style: none;
   margin: 0;
-  font-size: 24px; /* Adjust as needed */
-  flex: 1; /* Allow the text to expand and occupy remaining space */
-  text-align: center; /* Center align the text */
+  display: flex;
+}
+
+/* Styling for each navigation list item */
+.nav-list li {
+  margin-left: 20px;
+}
+
+/* Styling for navigation links */
+.nav-list li a {
+  color: black;
+  font-size: large;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Styling for navigation links on hover */
+.nav-list li a:hover {
+  text-decoration: underline;
 }
