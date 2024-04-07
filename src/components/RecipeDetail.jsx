@@ -21,9 +21,8 @@ function RecipeDetail() {
         "Bake at 350°F (175°C) for 10-12 minutes.",
         "Cool on baking sheets before transferring to wire racks."
       ],
-      imageUrl: "https://hips.hearstapps.com/hmg-prod/images/skillet-eggplant-parm1-1650313891.jpg?crop=1.00xw:0.752xh;0,0.135xh&resize=1200:*",
+      videoUrl: "https://www.youtube.com/embed/lJ7Ec3bKrxM",
     },
-
     {
       id: 2,
       title: "Classic Wedding Cake",
@@ -39,9 +38,8 @@ function RecipeDetail() {
         "Allow cakes to cool in pans for 10 minutes before transferring to wire racks to cool completely.",
         "Once cooled, frost and decorate as desired for a stunning wedding centerpiece."
       ],
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyKOAtmuhofDJuI5NzsOAwVE7_ZuQWKBoqTH24GGhvfg&s",
-    }, 
-
+      videoUrl: "https://www.youtube.com/embed/Aftb8hCnND0",
+    },
     {
       id: 3,
       title: "Milky Donut",
@@ -58,9 +56,8 @@ function RecipeDetail() {
         "Fill a piping bag with milk custard and pipe into the center of each donut.",
         "Dust with powdered sugar before serving."
       ],
-      imageUrl: "https://media.istockphoto.com/photos/donut-with-milk-picture-id157399184?k=6&m=157399184&s=612x612&w=0&h=SmWx0neGAcOs1M2JqA_7EgZ__2gPn6eEawT4N2GBAmw=",
+      videoUrl: "https://www.youtube.com/embed/V_c2_EQgLgE",
     },
-
     {
       id: 4,
       title: "Sardine Bread",
@@ -85,9 +82,8 @@ function RecipeDetail() {
         "Preheat the oven to 375°F (190°C). Bake the sardine bread for 20-25 minutes or until golden brown.",
         "Serve warm and enjoy the savory goodness of sardine bread!"
       ],
-      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
+      videoUrl: "https://www.youtube.com/embed/-BiZM4Ej1B0",
     },
-
     {
       id: 5,
       title: "Meat Pie",
@@ -117,9 +113,8 @@ function RecipeDetail() {
         "Bake in the preheated oven for 20-25 minutes or until golden brown and crispy.",
         "Serve hot and enjoy your homemade meat pies!"
       ],
-      imageUrl: "https://www.simplyrecipes.com/thmb/JVdfHi8ZgTxbEwK9XQ9GX6c5OhE=/2000x1333/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2016__11__2016-12-09-BeefPie-5-7e9e03c4994a414a87e7f2a4b49b24bc.jpg",
+      videoUrl: "https://www.youtube.com/embed/ZXM0ZZM9Mjs",
     },
-
     {
       id: 6,
       title: "Croissant Recipe",
@@ -146,9 +141,8 @@ function RecipeDetail() {
         "Bake for 15-20 minutes, or until golden brown and flaky.",
         "Serve warm and enjoy the buttery goodness of homemade croissants!"
       ],
-      imageUrl: "https://static.toiimg.com/photo/61831141.cms",
+      videoUrl: "https://www.youtube.com/embed/kJfi4bz2q0w",
     },
-
     {
       id: 7,
       title: "Blueberry Muffins",
@@ -175,10 +169,9 @@ function RecipeDetail() {
         "Allow muffins to cool in the pan for a few minutes, then transfer to a wire rack to cool completely.",
         "Serve warm and enjoy these delightful blueberry muffins!"
       ],
-      imageUrl: "https://www.onceuponachef.com/images/2019/04/Best-Blueberry-Muffins.jpg",
-  },
-
-  {
+      videoUrl: "https://www.youtube.com/embed/gN-orgrgvU8",
+    },
+    {
       id: 8,
       title: "Vanilla Cupcakes",
       description: "Classic cupcakes with a tender crumb and sweet vanilla flavor.",
@@ -204,35 +197,33 @@ function RecipeDetail() {
         "Frost with your favorite frosting and decorate as desired.",
         "Enjoy these classic vanilla cupcakes!"
       ],
-      imageUrl: "https://www.onceuponachef.com/images/2018/08/Vanilla-Cupcakes-760x877.jpg",
+      videoUrl: "https://www.youtube.com/embed/xrFZd54VFNE",
     },
-
     {
-        id: 9,
-        title: "Sausage Rolls",
-        description: "Flaky puff pastry filled with seasoned sausage meat.",
-        ingredients: [
-          "Puff Pastry Sheets",
-          "Sausage Meat",
-          "Onion",
-          "Garlic",
-          "Fresh Herbs (such as parsley, thyme, or sage)",
-          "Egg (for egg wash)"
-        ],
-        steps: [
-          "Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper.",
-          "In a skillet, cook diced onions and minced garlic until softened. Set aside to cool.",
-          "In a bowl, mix sausage meat with cooked onions, garlic, and chopped fresh herbs until well combined.",
-          "Roll out puff pastry sheets into rectangles. Cut each sheet in half lengthwise.",
-          "Divide the sausage mixture into portions and shape into logs. Place one log along the center of each pastry strip.",
-          "Fold the pastry over the sausage mixture and seal the edges. Cut each roll into smaller pieces.",
-          "Place the sausage rolls on the prepared baking sheet. Brush with beaten egg for a golden finish.",
-          "Bake for 20-25 minutes or until the pastry is golden brown and the sausage is cooked through.",
-          "Serve warm as a delicious snack or appetizer."
-        ],
-        imageUrl: "https://www.seriouseats.com/thmb/CNUWkhMI8N5uq7Tqb_q-tTgki2U=/735x0/sausage-rolls-45-1030477-8d7d49e4ab0c434da4324421af0a2a3e.jpg",
+      id: 9,
+      title: "Sausage Rolls",
+      description: "Flaky puff pastry filled with seasoned sausage meat.",
+      ingredients: [
+        "Puff Pastry Sheets",
+        "Sausage Meat",
+        "Onion",
+        "Garlic",
+        "Fresh Herbs (such as parsley, thyme, or sage)",
+        "Egg (for egg wash)"
+      ],
+      steps: [
+        "Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper.",
+        "In a skillet, cook diced onions and minced garlic until softened. Set aside to cool.",
+        "In a bowl, mix sausage meat with cooked onions, garlic, and chopped fresh herbs until well combined.",
+        "Roll out puff pastry sheets into rectangles. Cut each sheet in half lengthwise.",
+        "Divide the sausage mixture into portions and shape into logs. Place one log along the center of each pastry strip.",
+        "Fold the pastry over the sausage mixture and seal the edges. Cut each roll into smaller pieces.",
+        "Place the sausage rolls on the prepared baking sheet. Brush with beaten egg for a golden finish.",
+        "Bake for 20-25 minutes or until the pastry is golden brown and the sausage is cooked through.",
+        "Serve warm as a delicious snack or appetizer."
+      ],
+      videoUrl: "https://www.youtube.com/embed/_Q_EZihVo-Q",
     }
-    
   ]);
 
   // Find the recipe with the matching ID
@@ -252,12 +243,15 @@ function RecipeDetail() {
       </div>
       <div className="recipes-details-container">
         <h1>{recipe.title}</h1>
-        <div className="recipe-image-container">
-          <img
-            src={recipe.imageUrl}
-            alt={recipe.title}
-            className="recipe-image"
-          />
+        <div className="recipe-video-container">
+          <iframe
+            src={recipe.videoUrl}
+            title={recipe.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="recipe-video"
+          ></iframe>
         </div>
         <h2>Description:</h2>
         <p>{recipe.description}</p>
