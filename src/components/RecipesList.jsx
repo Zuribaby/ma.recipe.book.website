@@ -6,6 +6,7 @@ import "../css/RecipeList.css";
 import About from "./About";
 import Footer from "./Footer";
 import ContactForm from "./ContactForm";
+import Review from "./Review";
 
 function RecipesList() {
   const [recipes] = useState([
@@ -82,6 +83,7 @@ function RecipesList() {
           ))}
         </div>
       </div>
+      <Review />
       <ContactForm />
       <Footer />
     </div>
