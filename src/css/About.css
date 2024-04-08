@@ -4,7 +4,7 @@
   justify-content: space-between; /* Distribute space evenly between items */
   gap: 20px; /* Create gap between child elements */
   max-width: 90%;
-  margin: 0 auto;
+  margin: 150px auto;
   padding: 1rem 4vw;
 }
 

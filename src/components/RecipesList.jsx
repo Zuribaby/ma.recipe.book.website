@@ -69,7 +69,7 @@ function RecipesList() {
       <HeroVideo />
       <About />
       <div id="recipeslist" className="recipes-list-container">
-        <h1 className="recipes-list-heading">Junks</h1>
+        <h1 className="recipes-list-heading">Pastries</h1>
         <div className="recipe-grid">
           {recipes.map((recipe) => (
             <div key={recipe.id} className="recipe-item">
