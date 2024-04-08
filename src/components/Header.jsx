@@ -16,7 +16,9 @@ function Header() {
         throw new Error("Username, email, and password are required.");
       }
       if (username.length < 6 || password.length < 6) {
-        throw new Error("Username and password must be at least 6 characters long.");
+        throw new Error(
+          "Username and password must be at least 6 characters long."
+        );
       }
       if (!validateEmail(email)) {
         throw new Error("Please enter a valid email address.");
@@ -45,6 +47,10 @@ function Header() {
     setShowLoginForm(!showLoginForm);
   };
 
+  const closeLoginForm = () => {
+    setShowLoginForm(false);
+  };
+
   return (
     <header className="header">
       <div className="logo-container">
@@ -70,7 +76,11 @@ function Header() {
           </li>
         </ul>
       </nav>
-      {showLoginForm && (
+      {/* Use a conditional class to toggle the display of the form */}
+      <div className={`form-overlay ${showLoginForm ? "show" : ""}`}>
+        <button className="close-button" onClick={closeLoginForm}>
+          X
+        </button>
         <div className="form-box">
           <form>
             <input
@@ -90,12 +100,13 @@ function Header() {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              className="password-input" // Apply the CSS class
             />
             <button onClick={handleLogin}>Login</button>
           </form>
           {error && <p className="error">{error}</p>}
         </div>
-      )}
+      </div>
     </header>
   );
 }

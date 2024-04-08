@@ -2,7 +2,7 @@
 
 body {
   font-family: "Chivo", sans-serif;
-  background-color: #4C0033
+  background-color: #9BCF53
 }
 
 /* Center the entire content */
@@ -14,7 +14,7 @@ body {
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 90px;
-  
+
 }
 
 /* Add a new class for the recipe grid */

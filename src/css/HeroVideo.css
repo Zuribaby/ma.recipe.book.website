@@ -8,7 +8,7 @@
 .hero-video {
   max-width: 90%;
   height: 90%;
-  border: 7px solid white;
+  border: 7px solid black;
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }

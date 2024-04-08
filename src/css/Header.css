@@ -26,7 +26,7 @@
 .logo-name {
   font-weight: 700;
   font-size: 40px;
-  color: white;
+  color: black;
 }
 
 /* Styling for the navigation list */
@@ -43,7 +43,7 @@
 
 /* Styling for navigation links */
 .nav-list li a {
-  color: white;
+  color: black;
   font-size: 25px;
   font-weight: 800;
   text-decoration: none;
@@ -64,7 +64,7 @@
 
 /* Styling for form inputs */
 .form-box input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -73,7 +73,7 @@
 .form-box button {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -94,4 +94,56 @@
 /* Styling for login button */
 .header .nav-list li button {
   border-radius: 50px;
+  color: black;
+  background-color: #FFB500;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+  z-index: 1000; /* ensure it's on top of other content */
+}
+
+.form-box {
+  max-width: 50% !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-overlay.show {
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333; /* Adjust the color as needed */
+}
+
+.close-button:hover {
+  color: #ff0000;
+}
+.password-input {
+  width: 250px !important;
 }
