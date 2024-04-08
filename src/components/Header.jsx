@@ -1,22 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Header.css";
 import logo from "../images/logo.png"; // Assuming you have a logo image
 
 function Header() {
-  const scrollToAbout = (event) => {
-    event.preventDefault(); // Prevent the default behavior of the anchor tag
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [showLoginForm, setShowLoginForm] = useState(false);
+
+  const handleLogin = () => {
+    try {
+      // Validate username, email, and password
+      if (!username || !email || !password) {
+        throw new Error("Username, email, and password are required.");
+      }
+      if (username.length < 6 || password.length < 6) {
+        throw new Error("Username and password must be at least 6 characters long.");
+      }
+      if (!validateEmail(email)) {
+        throw new Error("Please enter a valid email address.");
+      }
+
+      // Perform login logic here (e.g., send request to backend)
+
+      // Reset form fields and errors
+      setUsername("");
+      setEmail("");
+      setPassword("");
+      setError("");
+      setShowLoginForm(false);
+    } catch (error) {
+      setError(error.message);
     }
   };
 
-  const scrollToRecipes = (event) => {
-    event.preventDefault(); // Prevent the default behavior of the anchor tag
-    const recipesSection = document.getElementById("recipeslist");
-    if (recipesSection) {
-      recipesSection.scrollIntoView({ behavior: "smooth" });
-    }
+  const validateEmail = (email) => {
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const toggleLoginForm = () => {
+    setShowLoginForm(!showLoginForm);
   };
 
   return (
@@ -31,20 +57,45 @@ function Header() {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#about" onClick={scrollToAbout}>
-              About
-            </a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#recipeslist" onClick={scrollToRecipes}>
-              Recipes
-            </a>
+            <a href="#recipeslist">Recipes</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
           </li>
+          <li>
+            <button onClick={toggleLoginForm}>Login</button>
+          </li>
         </ul>
       </nav>
+      {showLoginForm && (
+        <div className="form-box">
+          <form>
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button onClick={handleLogin}>Login</button>
+          </form>
+          {error && <p className="error">{error}</p>}
+        </div>
+      )}
     </header>
   );
 }
