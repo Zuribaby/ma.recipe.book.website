@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../images/chef.jpg";
+import aboutImage from "../images/Chef with Empty Menu.png";
 import "../css/About.css";
 
 function About() {

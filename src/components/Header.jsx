@@ -23,7 +23,7 @@ function Header() {
     <header className="header">
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
-        <span className="logo-name">ChiYamu</span>
+        <span className="logo-name">ChiYamu's Cookbook</span>
       </div>
       <nav>
         <ul className="nav-list">
