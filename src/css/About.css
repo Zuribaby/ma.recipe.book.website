@@ -20,6 +20,22 @@
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
+
+.text h1{
+  text-align: center;
+  margin: 0;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+.text p {
+  text-align: center;
+  margin: 0; 
+  line-height: 1.6;
+}
+
+
 .image img {
   max-width: 100%;
   max-height: 700px;

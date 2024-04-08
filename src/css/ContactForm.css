@@ -7,6 +7,8 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  background-color: white;
 }
 
 .contact-form-box h2 {
@@ -29,9 +31,10 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+  width: 90%;
   padding: 8px;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 button {
@@ -40,6 +43,7 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 button:hover {

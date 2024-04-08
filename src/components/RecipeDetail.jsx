@@ -253,15 +253,15 @@ function RecipeDetail() {
             className="recipe-video"
           ></iframe>
         </div>
-        <h2>Description:</h2>
+        <h2>Description</h2>
         <p>{recipe.description}</p>
-        <h2>Ingredients:</h2>
+        <h2>Ingredients</h2>
         <ul>
           {recipe.ingredients.map((ingredient, index) => (
             <li key={index}>{ingredient}</li>
           ))}
         </ul>
-        <h2>Preparation Steps:</h2>
+        <h2>Preparation Steps</h2>
         <ol>
           {recipe.steps.map((step, index) => (
             <li key={index}>{step}</li>
