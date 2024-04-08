@@ -5,10 +5,11 @@
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: black;
-  background-color: white;
+  background-color: #FEFDED;
+  border: 4px solid #4C4954;
 }
 
 .contact-form-box h2 {
@@ -39,8 +40,8 @@ textarea {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ffb500;
+  color: black;
   border: none;
   cursor: pointer;
   border-radius: 10px;
