@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap");
+
+/* Styling for the header container */
+.header {
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 1rem 4vw;
+  font-family: "Chivo", sans-serif;
+}
+
+/* Styling for the logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the logo */
+.logo {
+  width: 90px;
+  margin-bottom: 100px;
+}
+
+/* Styling for the logo name */
+.logo-name {
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+  margin-bottom: 100px;
+}
+
+/* Styling for the navigation list */
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+/* Styling for each navigation list item */
+.nav-list li {
+  margin-left: 20px;
+}
+
+/* Styling for navigation links */
+.nav-list li a {
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Styling for navigation links on hover */
+.nav-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the form box */
+.form-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 16%;
+  height: 20%;
+}
+
+/* Styling for form inputs */
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Styling for form button */
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  background-color: #ffb500;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+
+/* Styling for the error message */
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Styling for login button */
+.header .nav-list li button {
+  border-radius: 50px;
+  color: black;
+  background-color: #ffb500;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.form-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-overlay.show {
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #ffb500;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.close-button:hover {
+  color: black;
+}

@@ -1,0 +1,19 @@
+.hero-video-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 4vw;
+  margin-bottom: 100px;
+}
+
+.hero-video {
+  max-width: 89%;
+  height: 90%;
+  border: 8px solid #4c4954;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+}

@@ -1,0 +1,31 @@
+.footer {
+  margin-top: 200px; /* Adjust the margin-top value as needed */
+  background-color: #fefded;
+  border: 4px solid #4c4954;
+  padding: 10px 0; /* You can adjust padding as needed */
+  text-align: center;
+  height: 70px; /* Set the height of the footer */
+}
+
+.footer-icons {
+  margin-top: 10px; /* Adjust margin-top as needed */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+}
+
+.footer-icons a:hover {
+  color: #ffb500;
+}
+
+.footer-text {
+  margin-top: 10px; /* Adjust margin-top as needed */
+  font-size: 14px;
+  color: black;
+}
