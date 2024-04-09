@@ -1,15 +1,24 @@
 .footer {
   position: relative;
-
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 200px;
-  background-color: #c9ae98;
-  color: #fff;
+  border: 4px solid #4c4954;
+  background-color: #fefded;
+  color: black;
   text-align: center;
   padding: 20px;
 }
 
 .footer-content {
-  max-width: 1200px; /* Limit the width of the content */
-  margin: 0 auto; /* Center the content horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
 }

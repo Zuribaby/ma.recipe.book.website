@@ -53,29 +53,77 @@ function Header() {
 
   return (
     <header className="header">
+      {/* Logo */}
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
         <span className="logo-name">ChiYamu's Cookbook</span>
       </div>
+      {/* Navigation */}
       <nav>
         <ul className="nav-list">
           <li>
-            <a href="#home">Home</a>
+            {/* Smooth scroll to "Home" section */}
+            <a
+              href="#hero-video-container"
+              onClick={(e) => e.preventDefault()}
+              onMouseDown={() =>
+                document
+                  .getElementById("hero-video-container")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            {/* Smooth scroll to "About" section */}
+            <a
+              href="#about"
+              onClick={(e) => e.preventDefault()}
+              onMouseDown={() =>
+                document
+                  .getElementById("about")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href="#recipeslist">Recipes</a>
+            {/* Smooth scroll to "Recipes" section */}
+            <a
+              href="#recipeslist"
+              onClick={(e) => e.preventDefault()}
+              onMouseDown={() =>
+                document
+                  .getElementById("recipeslist")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Recipes
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            {/* Smooth scroll to "Contact" section */}
+            <a
+              href="#contact"
+              onClick={(e) => e.preventDefault()}
+              onMouseDown={() =>
+                document
+                  .getElementById("contact")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Contact
+            </a>
           </li>
           <li>
+            {/* Button to toggle login form */}
             <button onClick={toggleLoginForm}>Login</button>
           </li>
         </ul>
       </nav>
+      {/* Login Form */}
       {/* Use a conditional class to toggle the display of the form */}
       <div className={`form-overlay ${showLoginForm ? "show" : ""}`}>
         <button className="close-button" onClick={closeLoginForm}>
@@ -83,27 +131,31 @@ function Header() {
         </button>
         <div className="form-box">
           <form>
+            {/* Username input */}
             <input
               type="text"
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
+            {/* Email input */}
             <input
               type="email"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+            {/* Password input */}
             <input
-              type="password"
+              type="email"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="password-input" // Apply the CSS class
             />
+            {/* Login button */}
             <button onClick={handleLogin}>Login</button>
           </form>
+          {/* Error message */}
           {error && <p className="error">{error}</p>}
         </div>
       </div>

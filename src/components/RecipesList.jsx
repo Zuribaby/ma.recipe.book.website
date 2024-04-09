@@ -6,7 +6,6 @@ import "../css/RecipeList.css";
 import About from "./About";
 import Footer from "./Footer";
 import ContactForm from "./ContactForm";
-import Review from "./Review";
 
 function RecipesList() {
   const [recipes] = useState([
@@ -29,8 +28,7 @@ function RecipesList() {
     {
       id: 4,
       title: "Sardine Bread ",
-      description:
-        "A savory bread recipe featuring flavorful sardines.",
+      description: "A savory bread recipe featuring flavorful sardines.",
     },
     {
       id: 5,
@@ -41,14 +39,12 @@ function RecipesList() {
     {
       id: 6,
       title: "Croissant ",
-      description:
-        "A classic pastry filled with layers of buttery goodness.",
+      description: "A classic pastry filled with layers of buttery goodness.",
     },
     {
       id: 7,
       title: "Blueberry Muffins ",
-      description:
-        "Delicious muffins bursting with juicy blueberries.",
+      description: "Delicious muffins bursting with juicy blueberries.",
     },
     {
       id: 8,
@@ -59,8 +55,7 @@ function RecipesList() {
     {
       id: 9,
       title: "Sausage Rolls ",
-      description:
-        "Flaky puff pastry filled with seasoned sausage meat.",
+      description: "Flaky puff pastry filled with seasoned sausage meat.",
     },
   ]);
   return (
@@ -83,7 +78,6 @@ function RecipesList() {
           ))}
         </div>
       </div>
-      <Review />
       <ContactForm />
       <Footer />
     </div>

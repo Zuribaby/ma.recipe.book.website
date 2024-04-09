@@ -242,7 +242,7 @@ function RecipeDetail() {
         </Link>
       </div>
       <div className="recipes-details-container">
-        <h1>{recipe.title}</h1>
+        <h1 className="detailtitle">{recipe.title}</h1>
         <div className="recipe-video-container">
           <iframe
             src={recipe.videoUrl}
