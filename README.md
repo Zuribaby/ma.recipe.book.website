@@ -1,4 +1,4 @@
-
+Deployment link: https://chiyamubakery.netlify.app/
 Pair Project: Recipe Book Website
 Objective:
 Create a simple web application to display different recipes. The application should have at least two pages – a main “Recipes List” page and a “Recipe Detail” page. Each recipe item on the list should link to a detail page, where more information about the recipe is displayed.
